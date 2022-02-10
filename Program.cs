@@ -1,44 +1,45 @@
-﻿
+// Employee daily Wage
+
+
 
 using System;
-//Employee Daily Wage
-namespace EmployeeWage
+
+namespace wageCalculator;
+
+class Program
 {
-    class program
+    public static void Main(String[] args)
+
     {
-        public static void Main(string[] args)
+        Console.WriteLine($"Employee Wage Calculator");
+        int workingHr = 0;
+        int perHrSalary = 20;
+
+        Random rnd = new Random();
+        int present = (rnd.Next(2));
+
+        switch (present)
         {
 
-            int WorkingHr = 0;
-            int perHrSalary = 20;
-
-            Random rnd = new Random();
-            int present = (rnd.Next(20));
-
-            switch (present)
-            {
-                case 0:
-                    Console.WriteLine("employee  is Absent");
-                    WorkingHr = 0;
-                    break;
-
-                case 1:
-                    Console.WriteLine("employee  is Present");
-                    WorkingHr = 8;
-                    break;
-
-                default:
-                    Console.WriteLine("error");
-                    break;
-            }
-
-            
-                Console.WriteLine(" hello");
-            
-
-
-            int salary = WorkingHr * perHrSalary;
-            Console.WriteLine($"Salary {salary}");
+            case 0:
+                Console.WriteLine("Employee is absent");
+                workingHr = 0;
+                break;
+            case 1:
+                Console.WriteLine("Employee is present");
+                workingHr = 8;
+                break;
+            default:
+                Console.WriteLine("error");
+                break;
         }
+
+        int salary = perHrSalary * workingHr;
+        Console.WriteLine($"Salary {salary}");
+
+
     }
 }
+
+
+
