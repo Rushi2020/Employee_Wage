@@ -8,6 +8,7 @@ namespace EmployeeWage
     {
         public static void Main(string[] args)
         {
+
             int WorkingHr = 0;
             int perHrSalary = 20;
 
@@ -30,6 +31,11 @@ namespace EmployeeWage
                     Console.WriteLine("error");
                     break;
             }
+
+            
+                Console.WriteLine(" hello");
+            
+
 
             int salary = WorkingHr * perHrSalary;
             Console.WriteLine($"Salary {salary}");
