@@ -1,4 +1,4 @@
-// See https://aka.ms/new-console-template for more information
+// EMPLOYEE WAGE FOR 20 DAYS
 
 
 using System;
