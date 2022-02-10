@@ -1,23 +1,38 @@
 ﻿
+
 using System;
-//employee present or absent
+//Employee Daily Wage
 namespace EmployeeWage
 {
     class program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Random random = new Random();
-            int empcheck = random.Next(0, 2);
-            if (empcheck == 0)
+            int WorkingHr = 0;
+            int perHrSalary = 20;
+
+            Random rnd = new Random();
+            int present = (rnd.Next(20));
+
+            switch (present)
             {
-                Console.WriteLine("employee is present");
-            }
-            else
-            {
-                Console.WriteLine("employee is absent");
+                case 0:
+                    Console.WriteLine("employee  is Absent");
+                    WorkingHr = 0;
+                    break;
+
+                case 1:
+                    Console.WriteLine("employee  is Present");
+                    WorkingHr = 8;
+                    break;
+
+                default:
+                    Console.WriteLine("error");
+                    break;
             }
 
+            int salary = WorkingHr * perHrSalary;
+            Console.WriteLine($"Salary {salary}");
         }
     }
 }
