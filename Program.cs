@@ -1,4 +1,4 @@
-// See https://aka.ms/new-console-template for more information
+
 
 
 using System;
@@ -39,6 +39,10 @@ class Program
 
             int salary = perHrSalary * workingHr;
             totalSalary = totalSalary + salary;
+        UC-6
+
+            totalHr = totalHr + workingHr;
+     master
 
             if (totalHr >= 100)
             {
@@ -49,6 +53,7 @@ class Program
         Console.WriteLine($"Total Salary: {totalSalary}");
         Console.WriteLine($"Total working hours: {totalHr}");
 
+    UC-6
     }
     public static void Main(String[] args)
 
@@ -56,7 +61,11 @@ class Program
         Console.WriteLine($"Employee Wage Calculator");
         GetEmpWage();
 
+
+     master
+
     }
+}
 
 
 }
