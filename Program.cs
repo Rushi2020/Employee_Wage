@@ -1,9 +1,9 @@
  UC-8
 // Store daily wage inside directory with day
 
- UC-7
-// Store daily Wage in Arrays Format
- master
+
+
+ 
  master
 
 
