@@ -1,20 +1,7 @@
- UC-10
-// See https://aka.ms/new-console-template for more information
 
- UC-9
-// Compute employee wage using class and methods
-
- UC-8
-// Store daily wage inside directory with day
- master
-
- UC-7
 // Store daily Wage in Arrays Format
- master
- master
 
 
- master
 using System;
 using System.Collections.Generic;
 
@@ -83,15 +70,7 @@ class Program
         Console.WriteLine($"Total Days:{day} , Total Working Hours:{totalWorkingHrs} & Total Employee Wage:{empTotalWage}");
 
     }
- UC-10
-
-
-
- UC-9
-
-
-
-
+ 
     public static int GetWorkingHr()
     {
         //constant
@@ -127,10 +106,6 @@ class Program
 
     }
 
-
-   UC-8
-
-
     public static void Main(String[] args)
 
     {
@@ -146,31 +121,14 @@ class Program
         {
 
 
-       UC-7
             int workingHr=GetEmpWage();
-
-                case 0:
-                    workingHr = 0;
-                    break;
-                case 1:
-                    workingHr = 8;
-                    break;
-                case 2:
-                    workingHr = 4;
-                    break;
-                default:
-                    Console.WriteLine("error");
-                    break;
-            }
 
             int salary = perHrSalary * workingHr;
             totalSalary = totalSalary + salary;
-        UC-6
+        
 
             totalHr = totalHr + workingHr;
-     master
-      master
-
+     
             if (totalHr >= 100)
             {
                 break;
@@ -181,26 +139,15 @@ class Program
 
             dailyWageArray[day] = salary;
 
-      UC-7
+      
         }
             Console.WriteLine($"Total Salary: {totalSalary}");
             Console.WriteLine($"Total working hours: {totalHr}");
             Console.WriteLine(String.Join(" ", dailyWageArray));
         }
-
-    UC-6
+ 
     }
-    public static void Main(String[] args)
-   master
-
-
-
-     master
-
-    }
- master
- master
- master
+   }
 }
 
 
