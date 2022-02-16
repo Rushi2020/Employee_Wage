@@ -12,7 +12,7 @@ namespace EmployeeWage
             int perHrSalary = 20;
 
             Random rnd = new Random();
-            int present = (rnd.Next(20));
+            int present = (rnd.Next(0 , 3));
 
             switch (present)
             {
