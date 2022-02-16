@@ -59,20 +59,6 @@ class Program
 
             int workingHr=GetEmpWage();
 
-                case 0:
-                    workingHr = 0;
-                    break;
-                case 1:
-                    workingHr = 8;
-                    break;
-                case 2:
-                    workingHr = 4;
-                    break;
-                default:
-                    Console.WriteLine("error");
-                    break;
-            }
-
             int salary = perHrSalary * workingHr;
             totalSalary = totalSalary + salary;
         
@@ -98,8 +84,6 @@ class Program
 
     
     }
-    public static void Main(String[] args)
-   
     }
 }
 
