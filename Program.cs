@@ -1,7 +1,4 @@
- UC-7
 // Store daily Wage in Arrays Format
- master
-
 
 using System;
 
@@ -45,8 +42,6 @@ class Program
 
     }
 
-
-
     public static void Main(String[] args)
 
     {
@@ -62,7 +57,6 @@ class Program
         {
 
 
-       UC-7
             int workingHr=GetEmpWage();
 
                 case 0:
@@ -81,12 +75,10 @@ class Program
 
             int salary = perHrSalary * workingHr;
             totalSalary = totalSalary + salary;
-        UC-6
+        
 
             totalHr = totalHr + workingHr;
-     master
-      master
-
+     
             if (totalHr >= 100)
             {
                 break;
@@ -97,22 +89,17 @@ class Program
 
             dailyWageArray[day] = salary;
 
-      UC-7
+      
         }
             Console.WriteLine($"Total Salary: {totalSalary}");
             Console.WriteLine($"Total working hours: {totalHr}");
             Console.WriteLine(String.Join(" ", dailyWageArray));
         }
 
-    UC-6
+    
     }
     public static void Main(String[] args)
-   master
-
-
-
-     master
-
+   
     }
 }
 
