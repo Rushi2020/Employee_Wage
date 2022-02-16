@@ -39,11 +39,9 @@ class Program
 
             int salary = perHrSalary * workingHr;
             totalSalary = totalSalary + salary;
-        UC-6
-
+      
             totalHr = totalHr + workingHr;
-     master
-
+ 
             if (totalHr >= 100)
             {
                 break;
@@ -52,22 +50,15 @@ class Program
         }
         Console.WriteLine($"Total Salary: {totalSalary}");
         Console.WriteLine($"Total working hours: {totalHr}");
-
-    UC-6
     }
     public static void Main(String[] args)
 
     {
         Console.WriteLine($"Employee Wage Calculator");
-        GetEmpWage();
-
-
-     master
+        GetEmpWage(); 
 
     }
-}
-
-
+  }
 }
 
 
