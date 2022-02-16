@@ -16,7 +16,7 @@ class Program
         int totalSalary = 0;
 
         Random rnd = new Random();
-        int present = (rnd.Next(3));
+        int present = (rnd.Next(0 ,3));
 
         switch (present)
         {
