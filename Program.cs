@@ -1,15 +1,5 @@
- UC-9
+
 // Compute employee wage using class and methods
-
- UC-8
-// Store daily wage inside directory with day
- master
-
- UC-7
-// Store daily Wage in Arrays Format
- master
- master
-
 
 using System;
 using System.Collections.Generic;
@@ -25,11 +15,7 @@ class Program
         GetEmployeeWage getEmployeeWage = new GetEmployeeWage();
         getEmployeeWage.EmployeeWage();
     }
- UC-9
-
-
-
-
+ 
     public static int GetWorkingHr()
     {
         //constant
@@ -65,10 +51,6 @@ class Program
 
     }
 
-
-   UC-8
-
-
     public static void Main(String[] args)
 
     {
@@ -82,9 +64,6 @@ class Program
 
         for (int day = 1; day <= 20; day++)
         {
-
-
-       UC-7
             int workingHr=GetEmpWage();
 
                 case 0:
@@ -103,12 +82,8 @@ class Program
 
             int salary = perHrSalary * workingHr;
             totalSalary = totalSalary + salary;
-        UC-6
-
             totalHr = totalHr + workingHr;
-     master
-      master
-
+           
             if (totalHr >= 100)
             {
                 break;
@@ -118,26 +93,17 @@ class Program
             totalHr = totalHr + workingHr;
 
             dailyWageArray[day] = salary;
-
-      UC-7
+    
         }
             Console.WriteLine($"Total Salary: {totalSalary}");
             Console.WriteLine($"Total working hours: {totalHr}");
             Console.WriteLine(String.Join(" ", dailyWageArray));
         }
 
-    UC-6
     }
     public static void Main(String[] args)
-   master
-
-
-
-     master
-
+   
     }
- master
- master
 }
 
 
