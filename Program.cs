@@ -1,4 +1,4 @@
-// Employee Wage Problem Using oops concept
+// 
 
 
 using System;
