@@ -1,5 +1,3 @@
-// See https://aka.ms/new-console-template for more information
-
 
 using System;
 using System.Collections.Generic;
@@ -8,11 +6,17 @@ namespace wageCalculator;
 
 class Program
 {
-
     public static void Main(String[] args)
 
     {
         Console.WriteLine($"Employee Wage Calculator");
+
+        EmpWage Dmart = new EmpWage("Dmart", 20, 20, 100);
+        EmpWage Reliance = new EmpWage("Reliance", 25, 22, 50);
+
+    }
+}
+
         //constant
         const int PER_HR_SALARY = 20;
         //declaration and initilization
@@ -42,20 +46,17 @@ class Program
         }
         Console.WriteLine($"Total Salary: {totalSalary}");
         Console.WriteLine($"Total working hours: {totalHr}");
-        //Console.WriteLine(String.Join(" ", dailyWageArray));
 
+        
         for (int i = 0; i < 20; i++)
         {
             //Console.WriteLine($"day {i}  wage {dailyWageArray[i]}");
             Console.WriteLine($"day {i}  wage {dailyWageDict[i]}");
 
         }
-
     }
 
-
-
-    public static int GetWorkingHr()
+        public static int GetWorkingHr()
     {
         //constant
         const int ABSENT = 0;
@@ -64,14 +65,10 @@ class Program
         //declaration and initilization
         int workingHr = 0;
 
-
-
-
         Random rnd = new Random();
         int present = (rnd.Next(3));
         switch (present)
         {
-
             case 0:
                 workingHr = ABSENT;
                 break;
@@ -87,11 +84,9 @@ class Program
         }
 
         return workingHr;
-
     }
-
-
 }
+
 
 
 
